@@ -1,0 +1,147 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>
+          <ion-buttons>
+            <ion-menu-button menu="main-menu"></ion-menu-button>
+          </ion-buttons>
+        </ion-col>
+
+        <ion-col>
+          <ion-title>
+            Expo-App
+          </ion-title>
+        </ion-col>
+
+        <ion-col >
+          <ion-button routerLink="/login">Login</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+    <ion-slides [pager]="true">
+      <ion-slide>
+        <ion-card>
+          <img class="img" src="assets/icon/img.jpg">
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <img src="assets/icon/img2.jpg">
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <img src="assets/icon/img3.jpg">
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+
+<ion-card>
+    <ion-card-header>
+  <ion-card-title>Birthday Party Rosmah</ion-card-title>
+  <ion-card-subtitle>
+    Created by najib<br>
+  </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)">
+
+        <ion-segment-button value="categories">
+          <ion-label>categories</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="Details">
+          <ion-label>Details</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="Reserve">
+          <ion-label>Reservation</ion-label>
+        </ion-segment-button>
+
+      </ion-segment>
+
+
+
+      <div class="center">
+
+        <div class ="categories" *ngIf ="selectedSegment ==='categories'" >
+          Categories:<br>
+           <a href="">Entertaintment </a><br>
+           <a href="">Food & Beverage</a><br>
+           <a href="">Party</a><br>
+        </div>
+        <div class ="Details" *ngIf ="selectedSegment ==='Details'" >
+          <b>The event will be held on 19 september to 21 september.</b><br>
+          <b></b>
+        </div>
+        <div class ="Reserve" *ngIf ="selectedSegment ==='Reserve'" >
+
+          Please contact us through our email or whatsapp: <br>
+          <br>
+            Email: lalala@gmail.com
+            <br>
+            Phone: 012-3456789
+            <br>
+            Mrs zakiah
+
+        </div>
+
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+  <ion-card>
+
+    <ion-card-content>
+
+      <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)">
+
+        <ion-segment-button value="Location">
+          <ion-label>Location</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="Virtual">
+          <ion-label>Virtual booth</ion-label>
+        </ion-segment-button>
+
+
+
+      </ion-segment>
+
+
+
+      <div class="center">
+
+        <div class ="Location" *ngIf ="selectedSegment ==='Location'" >
+          <img src="assets/icon/img3.jpg" alt="">
+
+          <ion-button class="but1" routerLink="" >View in Google Map </ion-button>
+        </div>
+        <div class ="Virtual" *ngIf ="selectedSegment ==='Virtual'" >
+          <img src="assets/icon/img2.jpg" alt="">
+          <ion-button class="but1" routerLink="/virtual-booth"> View event's booth</ion-button>
+        </div>
+
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+
+
+</ion-content>

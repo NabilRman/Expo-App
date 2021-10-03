@@ -1,0 +1,67 @@
+ion-toolbar{
+  --background: rgb(0, 119, 255) !important;
+ion-title{
+  width: 130px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  }
+
+  ion-col{
+    margin-inline: 5px;
+
+  }
+}
+
+ion-content{
+  --background:rgb(68, 153, 250);
+}
+
+ion-card{
+  margin-top:3rem;
+  margin-left: 2.5rem;
+  width: 300px;
+  border:5px solid rgb(0, 119, 255) ;
+  border-radius: 2rem;
+
+  ion-card-title{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font: bold;
+    font-size: 22px;
+
+  }
+  ion-card-subtitle{
+    font-size: 14px;
+    text-align: justify;
+
+  }
+
+  .checkbox{
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    margin-left: -1rem;
+  }
+
+  ion-button{
+    width: 200px;
+    height: 40px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 14px;
+    color: black;
+    --background: white;
+    border: 5px solid rgb(0, 119, 255);
+
+  }
+ .reg{
+
+  margin-top: 1rem;
+
+ }
+ .forgot{
+   margin-left: 9rem;
+   margin-top: -1.4rem;
+ }
+}

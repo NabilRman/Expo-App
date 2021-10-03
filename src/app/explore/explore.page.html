@@ -1,0 +1,83 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>
+          <ion-buttons>
+            <ion-menu-button menu="main-menu"></ion-menu-button>
+          </ion-buttons>
+        </ion-col>
+
+        <ion-col>
+          <ion-title>
+            Expo-App
+          </ion-title>
+        </ion-col>
+
+        <ion-col >
+          <ion-button routerLink="/login">Login</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="filter">
+
+    <ion-icon name="filter-circle-outline"></ion-icon>
+
+  <ion-select multiple=" true" #mySelect placeholder=" Select Categories">
+    <ion-select-option> recent </ion-select-option>
+    <ion-select-option> ongoing </ion-select-option>
+    <ion-select-option> upcoming </ion-select-option>
+    <ion-select-option> oldest </ion-select-option>
+    <ion-select-option> Entertaintment </ion-select-option>
+    <ion-select-option> sports </ion-select-option>
+    <ion-select-option> educational </ion-select-option>
+    <ion-select-option> Games </ion-select-option>
+    <ion-select-option> Health </ion-select-option>
+    <ion-select-option> Food & Beverage </ion-select-option>
+  </ion-select>
+  </div>
+  <ion-content>
+
+    <ion-card>
+  <img src="assets/icon/img3.jpg" >
+  <h3>Rosmah's Birthday Party</h3>
+  <p>created by (name)</p>
+  <ion-icon class="ionicon1" name="calendar-outline"></ion-icon>
+  <b class="date"> (date) </b>
+  <ion-icon class="ionicon2" name="time-outline"></ion-icon>
+  <b class="time"> (duration) </b>
+
+  <ion-button>more details</ion-button>
+    </ion-card>
+
+    <ion-card>
+      <img src="assets/icon/img3.jpg" >
+      <h3>Najib's Birthday Party</h3>
+      <p>created by (name)</p>
+      <ion-icon class="ionicon1" name="calendar-outline"></ion-icon>
+      <b class="date"> (date) </b>
+      <ion-icon class="ionicon2" name="time-outline"></ion-icon>
+      <b class="time"> (duration) </b>
+
+      <ion-button>more details</ion-button>
+        </ion-card>
+
+        <ion-card>
+          <img src="assets/icon/img3.jpg" >
+          <h3>Sufian's Birthday Party</h3>
+          <p>created by (name)</p>
+          <ion-icon class="ionicon1" name="calendar-outline"></ion-icon>
+          <b class="date"> (date) </b>
+          <ion-icon class="ionicon2" name="time-outline"></ion-icon>
+          <b class="time"> (duration) </b>
+
+          <ion-button>more details</ion-button>
+            </ion-card>
+
+</ion-content>

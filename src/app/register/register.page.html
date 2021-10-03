@@ -1,0 +1,86 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>
+          <ion-buttons>
+            <ion-menu-button menu="main-menu"></ion-menu-button>
+          </ion-buttons>
+        </ion-col>
+
+        <ion-col>
+          <ion-title>
+            Expo-App
+          </ion-title>
+        </ion-col>
+
+        <ion-col >
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title > <b>Register</b> </ion-card-title>
+      <ion-card-subtitle>Please insert </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Name</ion-label>
+        <ion-input placeholder="Full Name"type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Username</ion-label>
+        <ion-input placeholder="Username"type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Company Name</ion-label>
+        <ion-input placeholder="Company name"type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Company Detail</ion-label>
+        <ion-textarea placeholder="Your company details; address,email,phone."type="email"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">your email</ion-label>
+        <ion-input placeholder="Email"type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input placeholder="Password"type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked"> Confirm Password</ion-label>
+        <ion-input placeholder="Password"type="password"></ion-input>
+      </ion-item>
+
+      <ion-item class="checkbox">
+        <ion-label>Remember me</ion-label>
+        <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+      </ion-item>
+
+    <ion-button>Register</ion-button>
+
+
+<div class="reg">
+    <p>already have an account? <a routerLink="/login">Login</a> </p>
+  </div>
+
+
+
+
+
+    </ion-card-content>
+
+
+  </ion-card>
+
+
+</ion-content>

@@ -1,0 +1,100 @@
+ion-toolbar{
+  --background: rgb(0, 119, 255) !important;
+ion-title{
+  width: 130px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  }
+
+  ion-col{
+    margin-inline: 5px;
+    ion-button{
+      width: 60px;
+      height: 30px;
+      font-size: 12px;
+      margin-left: 2rem;
+      --background: rgb(255, 255, 255);
+      --color: rgb(0, 0, 0);
+
+    }
+  }
+}
+
+ion-card{
+  margin-inline: 1rem;
+}
+
+.first{
+  margin-bottom: 2rem;
+
+}
+
+ion-slide{
+  margin-top:2rem;
+  margin-bottom:3rem;
+}
+
+ion-card-title{
+  margin-left: 2rem;
+  font-size: 20px;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+b{
+  margin-left: 2rem;
+  margin-top: 1rem;
+
+}
+
+ion-title{
+  font-size: 17px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+ion-label{
+  margin-bottom: 2rem;
+}
+
+ion-input{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.butsave{
+  margin-left: 15rem;
+  width: 80px;
+  height: 30px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.butsave2{
+  margin-left: 14rem;
+  width: 80px;
+  height: 30px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.butloc{
+  margin-left: 14rem;
+  width: 80px;
+  height: 30px;
+  margin-bottom: 2rem;
+}
+.butVB{
+ margin-left: 4.5rem;
+ height: 30px;
+ margin-top: 1rem;
+ margin-bottom: 2rem;
+
+}
+.center{
+
+img{
+
+  margin-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+}

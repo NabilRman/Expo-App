@@ -1,0 +1,22 @@
+ion-toolbar{
+  --background: rgb(0, 119, 255) !important;
+
+ion-title{
+  width: 130px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  }
+
+  ion-col{
+    margin-inline: 0px;
+    ion-button{
+      width: 60px;
+      height: 30px;
+      font-size: 15px;
+      margin-left: 2rem;
+      --background: rgb(255, 255, 255);
+      --color: rgb(0, 0, 0);
+
+    }
+  }
+}

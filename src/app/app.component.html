@@ -1,3 +1,75 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+  <ion-menu menuId="main-menu" contentId="main">
+    <ion-header>
+      <ion-toolbar color="primary">
+
+        <ion-title> Menu</ion-title>
+
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+
+      <ion-header class="header" >
+
+
+        <ion-avatar>
+          <img src="assets/icon/img5.jpg" alt="" class="floatdown">
+        </ion-avatar>
+
+        <b>David.sdn.bhd</b>
+
+      </ion-header>
+
+
+
+    <ion-menu-toggle autoHide="true">
+      <ion-card>
+      <ion-list>
+
+        <ion-item routerLink="">
+          <ion-icon name="home-outline"></ion-icon>
+          <p>Home</p>
+        </ion-item>
+
+        <ion-item routerLink="/manage">
+          <ion-icon name="calendar-clear-outline"></ion-icon>
+         <p>Manage Event </p>
+        </ion-item>
+
+        <ion-item routerLink="/eventlist">
+          <ion-icon name="list-outline"></ion-icon>
+          <p>Event list</p>
+        </ion-item>
+        <ion-item routerLink="/explore">
+          <ion-icon name="globe-outline"></ion-icon>
+          <p>Explore</p>
+        </ion-item>
+        <ion-item routerLink="/inbox">
+          <ion-icon name="mail-unread-outline"></ion-icon>
+          <p>Inbox </p>
+        </ion-item>
+        <ion-item routerLink="/account">
+          <ion-icon name="person-circle-outline"></ion-icon>
+          <p>Account</p>
+        </ion-item>
+        <ion-item routerLink="/settings">
+          <ion-icon name="settings-outline"></ion-icon>
+          <p>Settings</p>
+        </ion-item>
+
+
+
+      </ion-list>
+    </ion-card>
+    </ion-menu-toggle>
+
+
+    </ion-content>
+
+  </ion-menu>
+  <ion-router-outlet id="main" >
+  </ion-router-outlet>
+
 </ion-app>

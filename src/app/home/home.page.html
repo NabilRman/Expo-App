@@ -1,20 +1,129 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>
+          <ion-buttons>
+            <ion-menu-button menu="main-menu"></ion-menu-button>
+          </ion-buttons>
+        </ion-col>
+
+        <ion-col>
+          <ion-title>
+            Expo-App
+          </ion-title>
+        </ion-col>
+
+        <ion-col >
+          <ion-button routerLink="/login">Login</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card class="intro">
+    <ion-card-header>
+      <ion-card-title> Welcome to Expo App</ion-card-title>
+      <ion-card-subtitle>Description</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div class="p">
+      <b>Create, Manage and publish your event with this app! Click login on top of the toolbar to get started. You can also view public events in this app. Feel free to explore!</b>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+
+
+
+  <ion-title>Ongoing events</ion-title>
+
+<ion-slides [options]="opt" [pager]="true"  >
+
+<ion-slide>
+<ion-card>
+      <ion-card>
+        <img src="assets/icon/img3.jpg">
+      </ion-card>
+
+
+  <ion-card-header>
+<ion-card-title>Birthday Party Rosmah</ion-card-title>
+<ion-card-subtitle>Created by najib</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-button  routerLink="/view"> More details</ion-button>
+  </ion-card-content>
+</ion-card>
+</ion-slide>
+
+<ion-slide>
+<ion-card>
+      <ion-card>
+        <img src="assets/icon/img.jpg">
+      </ion-card>
+
+
+  <ion-card-header>
+<ion-card-title>Birthday Party Rosmah</ion-card-title>
+<ion-card-subtitle>Created by najib</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-button  routerLink="/view" >More details </ion-button>
+  </ion-card-content>
+</ion-card>
+</ion-slide>
+
+</ion-slides>
+
+
+<ion-title>Upcomng Events</ion-title>
+
+<ion-slides [pager]="true">
+<ion-slide>
+
+  <ion-card>
+
+        <ion-card>
+          <img src="assets/icon/img3.jpg">
+        </ion-card>
+
+    <ion-card-header>
+  <ion-card-title>Birthday Party Rosmah</ion-card-title>
+  <ion-card-subtitle>Created by najib</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button   routerLink="/view"> More details</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-slide>
+
+
+<ion-slide>
+  <ion-card>
+
+        <ion-card>
+          <img src="assets/icon/img3.jpg">
+        </ion-card>
+
+
+    <ion-card-header>
+  <ion-card-title>Birthday Party Rosmah</ion-card-title>
+  <ion-card-subtitle>Created by najib</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button  routerLink="/view"> More details</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-slide>
+</ion-slides>
+
 </ion-content>

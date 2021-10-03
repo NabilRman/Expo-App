@@ -1,0 +1,189 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>
+          <ion-buttons>
+            <ion-menu-button menu="main-menu"></ion-menu-button>
+          </ion-buttons>
+        </ion-col>
+
+        <ion-col>
+          <ion-title>
+            Expo-App
+          </ion-title>
+        </ion-col>
+
+        <ion-col >
+          <ion-button routerLink="/login">Login</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+<ion-card>
+
+  <ion-card-title>Create your own event</ion-card-title>
+
+  <b> Please Insert your event's information </b>
+
+
+  <ion-slides [pager]="true" >
+    <ion-slide>
+      <ion-card>
+        <img src="assets/icon/img7.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/icon/img7.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/icon/img7.png">
+
+      </ion-card>
+
+    </ion-slide>
+
+
+
+  </ion-slides>
+
+</ion-card>
+
+
+
+    <ion-card-title>Event's Information</ion-card-title>
+
+
+      <ion-card class="first">
+      <div class="center">
+
+
+        <ion-title>Categories</ion-title>
+
+          <ion-item>
+            <ion-label>Event categories</ion-label>
+            <ion-select value=" ">
+              <ion-select-option value=" ">Category</ion-select-option>
+              <ion-select-option value="entertaintment">Entertaintment</ion-select-option>
+              <ion-select-option value="sport">Sport</ion-select-option>
+              <ion-select-option value="educational">Educational</ion-select-option>
+              <ion-select-option value="games">Games</ion-select-option>
+              <ion-select-option value="health">Health Care</ion-select-option>
+              <ion-select-option value="Food">Food & Beverage</ion-select-option>
+
+              <ion-select-option value="others"> others</ion-select-option>
+
+              <!-- <ion-item no-lines *ngIf = "show">
+                <ion-icon class="iconstyle" name="logo-bitcoin" item-start></ion-icon>
+                <ion-label floating color="primary">Others</ion-label>
+                <ion-input type="text" class="textcolor" formControlName = "Others" maxlength="50" tabindex="1"></ion-input>
+           </ion-item> -->
+
+            </ion-select>
+          </ion-item>
+
+
+          <ion-button class="butsave">submit</ion-button>
+
+        </div>
+
+        </ion-card>
+
+        <ion-card class="first">
+        <ion-title>Details</ion-title>
+        <ion-item>
+        <div class ="Details" >
+
+          <ion-label position="stacked"> insert your event Description</ion-label>
+          <ion-textarea placeholder="Event Detail"type="text"></ion-textarea>
+          <ion-button class="butsave2">submit</ion-button>
+
+        </div>
+      </ion-item>
+      </ion-card>
+
+      <ion-card class="first">
+      <ion-title>Reserve Information</ion-title>
+      <ion-item>
+        <div class ="Reserve" >
+
+          <ion-item>
+          <ion-label position="stacked">Details</ion-label>
+          <ion-textarea placeholder="Description"type="text"></ion-textarea>
+        </ion-item>
+          <br>
+          <ion-item>
+          <ion-label position="stacked">Email</ion-label>
+          <ion-input placeholder="Email"type="Email"></ion-input>
+        </ion-item>
+          <br>
+          <ion-item>
+          <ion-label position="stacked">Phone Numbers</ion-label>
+          <ion-input placeholder="Insert phone numbers here"type="Numbers"></ion-input>
+        </ion-item>
+          <br>
+        <ion-item>
+          <ion-label position="stacked">Owner Name</ion-label>
+          <ion-input placeholder="Event Manager Name"type="text"></ion-input>
+        </ion-item>
+          <ion-button class="butsave2">submit</ion-button>
+        </div>
+      </ion-item>
+
+  </ion-card>
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="center">
+        <ion-card class="first">
+          <ion-title >Location</ion-title>
+        <ion-item>
+        <div class ="Location"  >
+          <img src="assets/icon/img7.png" alt=""><br>
+
+          <ion-label position="stacked">Paste your location here</ion-label>
+          <ion-input placeholder="Location link"type="link"></ion-input>
+
+          <ion-button class="butloc" routerLink="" > Submit </ion-button>
+        </div>
+      </ion-item>
+    </ion-card>
+
+    <ion-card class="first">
+      <ion-title>Virtual Booth</ion-title>
+
+      <ion-item>
+
+        <div class ="Virtual" >
+          <img src="assets/icon/img7.png" alt="">
+          <ion-button routerLink="/virtual-booth" class="butVB"> edit event's booth</ion-button>
+        </div>
+      </ion-item>
+
+  </ion-card>
+    </div>
+
+</ion-content>
+
+
